@@ -1,6 +1,16 @@
-class Main {
+public class Main {
   static void ThisMethod() {
-    System.out.println("This is a CUSTOM METHOD! \n in a pre-defined method");
+    System.out.println("This is a CUSTOM METHOD! \n in a pre-defined method\n Methods are like function, used when called.");
+  }
+  static void addition(int first_int, int sec_int) {
+    int AddTotal = first_int + sec_int;
+    System.out.println("\n");
+    System.out.println(first_int + " + " + sec_int + " = " + AddTotal);
+    if (first_int + sec_int <= 20) {
+      System.out.println("Bit to easy, don't you think?\n");
+    } else {
+      System.out.println("I get why you would use it.\n");
+    }
   }
   public static void main(String[] args) {
     int calcDays = -1;
@@ -64,10 +74,11 @@ class Main {
     //double array
     System.out.println("\n Double arrays");
     int[][] addition = { {1, 2, 3, 4, 5}, {0, 1, 2, 3, 4} };
-    int calculation = addition[3][3];
+    int calculation = addition[1][1];
     System.out.println(calculation);
     //moth to a flame the weekend & swedish house mafia
     //method
     ThisMethod();
+    addition(15, 5);
   }
 }
