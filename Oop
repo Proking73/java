@@ -1,8 +1,30 @@
-public class Main {
-    int x = 5;
-  
-    public static void main(String[] args) {
-      Main myObj = new Main();
-      System.out.println(myObj.x);
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+    //message
+    String dash = "Make sure the following numbers are numbers, not letters, you may not put decimals.";
+    System.out.println(dash);
+    System.out.println(dash.length());
+    int dashLong = 0;
+    dashLong++;
+    do {
+      System.out.println("-");
     }
+    while (dashLong < dash.length() / 2);
+    //input num1
+    Scanner Input1 = new Scanner (System.in);
+    System.out.println("Number 1");
+    int n1v2 = Input1.nextInt();
+    //input num2
+    Scanner Input2 = new Scanner (System.in);
+    System.out.println("Number 2");
+    int n2v2 = Input2.nextInt();
+    //create object for method & add the parameters
+    Main add = new Main();
+    add.calc(n1v2, n2v2);
   }
+  public void calc(int num1, int num2) {
+    int total = num1 + num2;
+    System.out.println("\n------------ \n" + num1 + " + " + num2 +  " = " + total + "\n------------");
+  }  
+}
