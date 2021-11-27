@@ -1,17 +1,12 @@
 import java.util.*;
+import java.time.*;
+import java.time.format.*;
 class Main {
   public static void main(String[] args) {
     //message
     String dash = "Make sure the following numbers are numbers, not letters, you may not put decimals.";
     System.out.println(dash);
-    System.out.println(dash.length());
-    int dashLong = 0;
-    dashLong++;
-    do {
-      System.out.println("-");
-    }
-    while (dashLong < dash.length() / 2);
-    //input num1
+    //input num1 
     Scanner Input1 = new Scanner (System.in);
     System.out.println("Number 1");
     int n1v2 = Input1.nextInt();
@@ -22,9 +17,15 @@ class Main {
     //create object for method & add the parameters
     Main add = new Main();
     add.calc(n1v2, n2v2);
+    //date 
+    //LocalDate tad = LocalDate.of(1988, Month.APRIL, 1-10);
+    LocalDate tad = LocalDate.now();
+    DateTimeFormatter toReadTad = DateTimeFormatter.ofPattern("dd|MM|yyyy");
+    String date = "The date is: " + tad.format(toReadTad) + ".";
+    System.out.println(date);
   }
   public void calc(int num1, int num2) {
     int total = num1 + num2;
-    System.out.println("\n------------ \n" + num1 + " + " + num2 +  " = " + total + "\n------------");
+    System.out.println("------------ \n" + num1 + " + " + num2 +  " = " + total + "\n------------");
   }  
 }
