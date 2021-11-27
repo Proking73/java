@@ -1,6 +1,7 @@
 import java.util.*;
 import java.time.*;
 import java.time.format.*;
+//make option with if else or switch, if addition, subtract, divide, or multiply
 class Calc {
   public static void main(String[] args) {
     //message
