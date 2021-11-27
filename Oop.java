@@ -21,7 +21,7 @@ class Main {
     //LocalDate tad = LocalDate.of(1988, Month.APRIL, 1-10);
     LocalDate tad = LocalDate.now();
     DateTimeFormatter toReadTad = DateTimeFormatter.ofPattern("dd|MM|yyyy");
-    String date = "The date is: " + tad.format(toReadTad) + ".";
+    String date = "You calculated this on " + tad.format(toReadTad) + ".\n";
     System.out.println(date);
   }
   public void calc(int num1, int num2) {
