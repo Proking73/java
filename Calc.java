@@ -1,7 +1,7 @@
 import java.util.*;
 import java.time.*;
 import java.time.format.*;
-class Main {
+class Calc {
   public static void main(String[] args) {
     //message
     String dash = "Make sure the following numbers are numbers, not letters, you may not put decimals.";
@@ -15,7 +15,7 @@ class Main {
     System.out.println("Number 2");
     int n2v2 = Input2.nextInt();
     //create object for method & add the parameters
-    Main add = new Main();
+    Calc add = new Calc();
     add.calc(n1v2, n2v2);
     //date 
     //LocalDate tad = LocalDate.of(1988, Month.APRIL, 1-10);
