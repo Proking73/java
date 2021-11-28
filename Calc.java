@@ -7,7 +7,11 @@ class Calc {
     //message
     String dash = "Make sure the following numbers are numbers, not letters, you may not put decimals.";
     System.out.println(dash);
-    Scanner which = new Scanner (System.in);
+    int dashLong = 0;
+    do {
+      System.out.print("-");
+    } while (dashLong < dash.length());
+    /*Scanner which = new Scanner (System.in);
     String properties = " \n A) Addition\n B) Subtraction\n C) Multiplication\n D) Division";
     System.out.println("Which property do you want to use?" + properties);
     String propval = which.nextLine();
